@@ -55,8 +55,21 @@ class ViewController: UIViewController {
             case.success:
                 let json:JSON = JSON(response.data as Any)
             
-                let imageString = json["hits"][self.count]["webformatURL"].string
-                self.odaiImageView.sd_setImage(with: URL(string: imageString!), completed: nil)
+                var imageString = json["hits"][self.count]["webformatURL"].string
+                
+                if imageString == nil{
+                    
+                    imageString = json["hits"][0]["webformatURL"].string
+                    
+                    
+                 self.odaiImageView.sd_setImage(with: URL(string: imageString!), completed: nil)
+                    
+                    
+                }else{
+                       self.odaiImageView.sd_setImage(with: URL(string: imageString!), completed: nil)
+    
+                }
+       
                 
             case.failure(let error):
                 
@@ -103,7 +116,13 @@ class ViewController: UIViewController {
         
     }
     
-    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let shareVC = segue.destination as? ShareViewController
+        
+        shareVC?.commentString = commentTextView.text
+        shareVC?.resultImage = odaiImageView.image!
+        
+    }
     
     
     

@@ -3,11 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		538DE4FC73F412CD6D287F06 /* Pods_R2020Bokete01.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3323D561B2E562F7D4D0AC01 /* Pods_R2020Bokete01.framework */; };
+		8D42C82E249270B7004DAD17 /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D42C82D249270B7004DAD17 /* ShareViewController.swift */; };
 		8D5BCA302492186400D263DA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5BCA2F2492186400D263DA /* AppDelegate.swift */; };
 		8D5BCA322492186400D263DA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5BCA312492186400D263DA /* SceneDelegate.swift */; };
 		8D5BCA342492186400D263DA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5BCA332492186400D263DA /* ViewController.swift */; };
@@ -19,6 +20,7 @@
 /* Begin PBXFileReference section */
 		3323D561B2E562F7D4D0AC01 /* Pods_R2020Bokete01.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_R2020Bokete01.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		76D944EF97E0A8DCC39B24D3 /* Pods-R2020Bokete01.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-R2020Bokete01.debug.xcconfig"; path = "Target Support Files/Pods-R2020Bokete01/Pods-R2020Bokete01.debug.xcconfig"; sourceTree = "<group>"; };
+		8D42C82D249270B7004DAD17 /* ShareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
 		8D5BCA2C2492186400D263DA /* R2020Bokete01.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = R2020Bokete01.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D5BCA2F2492186400D263DA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8D5BCA312492186400D263DA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -48,7 +50,6 @@
 				76D944EF97E0A8DCC39B24D3 /* Pods-R2020Bokete01.debug.xcconfig */,
 				B2EE1EFBB60C461CB42E3750 /* Pods-R2020Bokete01.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -84,6 +85,7 @@
 				8D5BCA2F2492186400D263DA /* AppDelegate.swift */,
 				8D5BCA312492186400D263DA /* SceneDelegate.swift */,
 				8D5BCA332492186400D263DA /* ViewController.swift */,
+				8D42C82D249270B7004DAD17 /* ShareViewController.swift */,
 				8D5BCA352492186400D263DA /* Main.storyboard */,
 				8D5BCA382492186700D263DA /* Assets.xcassets */,
 				8D5BCA3A2492186700D263DA /* LaunchScreen.storyboard */,
@@ -209,6 +211,7 @@
 			files = (
 				8D5BCA342492186400D263DA /* ViewController.swift in Sources */,
 				8D5BCA302492186400D263DA /* AppDelegate.swift in Sources */,
+				8D42C82E249270B7004DAD17 /* ShareViewController.swift in Sources */,
 				8D5BCA322492186400D263DA /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

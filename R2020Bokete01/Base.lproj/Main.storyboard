@@ -77,12 +77,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-206" y="5"/>
+            <point key="canvasLocation" x="-287" y="-3"/>
         </scene>
-        <!--View Controller-->
+        <!--Share View Controller-->
         <scene sceneID="nmy-Rz-5yX">
             <objects>
-                <viewController id="rkw-PG-Lkr" sceneMemberID="viewController">
+                <viewController id="rkw-PG-Lkr" customClass="ShareViewController" customModule="R2020Bokete01" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Vfb-gu-bY6">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -106,11 +106,17 @@
                                 <rect key="frame" x="59" y="734" width="291" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="シェアする"/>
+                                <connections>
+                                    <action selector="share:" destination="rkw-PG-Lkr" eventType="touchUpInside" id="yEr-L5-Xr6"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jCW-T3-soa">
                                 <rect key="frame" x="59" y="790" width="291" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="戻る"/>
+                                <connections>
+                                    <action selector="back:" destination="rkw-PG-Lkr" eventType="touchUpInside" id="FT6-l6-rqU"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DbC-LR-Rvz">
                                 <rect key="frame" x="59" y="520" width="291" height="128"/>
@@ -123,10 +129,14 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="ON9-IW-iMb"/>
                     </view>
+                    <connections>
+                        <outlet property="commentLabel" destination="DbC-LR-Rvz" id="c9e-6G-UG6"/>
+                        <outlet property="resultImageView" destination="o1N-Dw-NEO" id="dcJ-S3-bC4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="df5-qB-FKN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="646" y="5"/>
+            <point key="canvasLocation" x="496" y="-3"/>
         </scene>
     </scenes>
     <resources>
